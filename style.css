@@ -1,0 +1,70 @@
+:root {
+  --bg: #0a0a0a;
+  --text: #fff;
+  --accent: #ff003c;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); }
+
+.navbar {
+  position: fixed; top: 0; width: 100%;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1rem 2rem; background: rgba(0,0,0,0.6); backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+.navbar .logo { font-size: 1.5rem; font-weight: bold; }
+.navbar nav a { margin: 0 1rem; color: var(--text); text-decoration: none; }
+.navbar nav .btn { background: var(--accent); padding: 0.5rem 1rem; border-radius: 6px; }
+
+.hero {
+  background: url('assets/hero.jpg') center/cover no-repeat;
+  height: 100vh; display: flex; justify-content: center; align-items: center;
+  text-align: center; padding: 2rem;
+}
+.hero .title { font-size: 3rem; margin-bottom: 1rem; }
+.hero .title span { color: var(--accent); }
+.hero .subtitle { font-size: 1.2rem; margin-bottom: 1.5rem; }
+.btn, .btn-outline {
+  padding: 0.8rem 1.5rem; margin: 0.5rem; border-radius: 30px;
+  font-weight: bold; text-decoration: none; transition: 0.3s;
+}
+.btn { background: var(--accent); color: #fff; }
+.btn:hover { transform: scale(1.05); }
+.btn-outline { border: 2px solid var(--accent); color: var(--accent); }
+.btn-outline:hover { background: var(--accent); color: #fff; }
+
+.marquee {
+  background: #111; color: var(--accent); overflow: hidden; white-space: nowrap;
+  padding: 0.5rem; margin-top: -3px;
+}
+.marquee span {
+  display: inline-block; animation: scroll 15s linear infinite;
+}
+@keyframes scroll { from { transform: translateX(100%);} to { transform: translateX(-100%);} }
+
+.features {
+  display: flex; justify-content: center; gap: 2rem; padding: 5rem 2rem;
+}
+.features .card {
+  background: #111; border-radius: 15px; padding: 1.5rem; text-align: center;
+  width: 250px; box-shadow: 0 5px 15px rgba(0,0,0,0.4); transition: transform 0.3s;
+}
+.features .card img { width: 100%; border-radius: 10px; margin-bottom: 1rem; }
+
+.trailer, .gallery, .stats, .download {
+  padding: 5rem 2rem; text-align: center;
+}
+.video-wrapper { max-width: 800px; margin: auto; }
+
+.swiper { width: 80%; margin: auto; }
+.swiper-slide img { width: 100%; border-radius: 15px; }
+
+.stats { display: flex; justify-content: center; gap: 3rem; }
+.stats .counter { font-size: 2.5rem; color: var(--accent); display: block; }
+
+.download .stores img { width: 150px; margin: 1rem; }
+
+footer {
+  background: #111; text-align: center; padding: 1rem;
+}
