@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spirrow – Official Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Swiper for carousel -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Spirrow</div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#trailer">Trailer</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#stats">Stats</a>
+      <a href="#download" class="btn">Download</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="title">Welcome to <span>Spirrow</span></h1>
+      <p class="subtitle">Experience the action, live and uncut.</p>
+      <div class="cta">
+        <a href="#trailer" class="btn">Watch Trailer</a>
+        <a href="#download" class="btn-outline">Get App</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <span>🔥 Join the Spirrow community • 🎮 Watch live streams • 🚀 New updates coming soon • </span>
+  </div>
+
+  <!-- Features -->
+  <section id="features" class="features">
+    <div class="card tilt">
+      <img src="assets/cover.png" alt="Feature" />
+      <h3>Epic Gameplay</h3>
+      <p>Enjoy intense matches and pro strategies.</p>
+    </div>
+    <div class="card tilt">
+      <img src="assets/cover.png" alt="Feature" />
+      <h3>Live Streaming</h3>
+      <p>Watch live, interact, and cheer in real-time.</p>
+    </div>
+    <div class="card tilt">
+      <img src="assets/cover.png" alt="Feature" />
+      <h3>Massive Community</h3>
+      <p>Be part of a growing fanbase worldwide.</p>
+    </div>
+  </section>
+
+  <!-- Trailer -->
+  <section id="trailer" class="trailer">
+    <h2>Official Trailer</h2>
+    <div class="video-wrapper">
+      <iframe width="100%" height="480"
+        src="https://www.youtube.com/embed/VIDEO_ID"
+        title="Spirrow Trailer"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="assets/shot1.jpg" alt="shot1" /></div>
+        <div class="swiper-slide"><img src="assets/shot2.jpg" alt="shot2" /></div>
+        <div class="swiper-slide"><img src="assets/shot3.jpg" alt="shot3" /></div>
+        <div class="swiper-slide"><img src="assets/shot4.jpg" alt="shot4" /></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section id="stats" class="stats">
+    <div class="stat">
+      <span class="counter" data-counter="5000">0</span>
+      <p>Subscribers</p>
+    </div>
+    <div class="stat">
+      <span class="counter" data-counter="510000">0</span>
+      <p>Views</p>
+    </div>
+    <div class="stat">
+      <span class="counter" data-counter="433">0</span>
+      <p>Videos</p>
+    </div>
+  </section>
+
+  <!-- Download -->
+  <section id="download" class="download">
+    <h2>Download the App</h2>
+    <div class="stores">
+      <a href="#"><img src="assets/playstore.svg" alt="Google Play" /></a>
+      <a href="#"><img src="assets/appstore.svg" alt="App Store" /></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Spirrow. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
