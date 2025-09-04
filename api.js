@@ -4,7 +4,7 @@ const fetch = require('node-fetch');
 module.exports = async (req, res) => {
   const { op, playlistId, ids, eventType } = req.query;
   const key = process.env.YT_API_KEY;
-  if (!key) return res.status(500).json({ error: 'YT_API_KEY not configured' });
+  if (!key) return res.status(500).json({ error: 'AIzaSyDKTOXH-qeVJ3xAjyhQ11AxaYPDa3tkjfk' });
 
   try {
     let url;
